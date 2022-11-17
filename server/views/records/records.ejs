@@ -1,26 +1,26 @@
 <%- include ../partials/header.ejs %>
-<%- include ../partials/main_nav.ejs %>
+<%- include ../partials/main_nav.ejs %> <!-- partials for every webpage -->
 
 <!-- Main Content -->
 <main>
   <div class="container">
     <h1>Video Records</h1>
-    <a href="/records/add" class="btn btn-primary" role="button">
+    <a href="/records/add" class="btn btn-primary" role="button"> <!-- Button to send to the add webpage-->
       <i class="fas fa-plus-circle"></i> Add a Record </a>
     <div class="row">
     <div class="col-md-offset-3 col-md-10">
     <br>
-    <table class="table table-bordered table-striped margin-left:auto margin-right: auto">
+    <table class="table table-bordered table-striped margin-left:auto margin-right: auto"> <!-- create table for data entries -->
     <tr>
     <th class="text-center col-2">Video Name</th>
     <th class="text-center col-2">Date Watched</th>
     <th class="text-center col-2">Watch Duration</th>
     <th class="text-center col-2">Edit Entry</th>
-    <th class="text-center col-2">Delete Entry</th>
+    <th class="text-center col-2">Delete Entry</th> <!-- All the table headers for the table-->
     </tr>
     <!-- Create loop to reuse template for multiple entries -->
-    <% for(let count=0; count<records.length; count++) { %>
-        <tr>
+    <% for(let count=0; count<records.length; count++) { %> 
+        <tr> 
         <td class="text-center col-2"><%= records[count].videoName %></td>
         <td class="text-center col-2"><%= records[count].date %></td>
         <td class="text-center col-2"><%= records[count].duration %></td>
@@ -49,6 +49,6 @@ body {
   background: #80D39B;
 }
 </style>
-<%- include ../partials/bottom_nav.ejs %>
+<%- include ../partials/bottom_nav.ejs %> <!-- partials for every webpage -->
 <%- include ../partials/footer.ejs %>
 

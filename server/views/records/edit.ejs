@@ -1,5 +1,5 @@
 <%- include ../partials/header.ejs %>
-<%- include ../partials/main_nav.ejs %>
+<%- include ../partials/main_nav.ejs %> <!-- partials for every webpage -->
 <!-- Edit page -->
 
 <div class="container">
@@ -9,33 +9,33 @@
             <br>
             <form class="form" method="post">
                 <div class="form-group">
-                    <label for="videoNameField">Video Title</label>
+                    <label for="videoNameField">Video Title</label> <!-- create a form to edit video name field of entry  -->
                     <input type="text" class="form-control"
                     id="videoNameField"
                     placeholder="Please enter the video title"
                     name="videoName"
                     value="<%= record.videoName %>"
-                    required>
+                    required> <!-- required fields -->
                 </div>
                 <br>
                 <div class="form-group">
-                    <label for="dateWatched">Date Watched</label>
+                    <label for="dateWatched">Date Watched</label> <!-- create a form to edit date field of entry  -->
                     <input type="text" class="form-control"
                     id="dateWatched"
                     placeholder="Please enter what day you watched the video"
                     name="date"
                     value="<%= record.date %>"
-                    required>
+                    required> <!-- required fields -->
                 </div>
                 <br>
                 <div class="form-group">
-                    <label for="videoDuration">Duration Watched</label>
+                    <label for="videoDuration">Duration Watched</label> <!-- create a form to edit duration field of entry  -->
                     <input type="text" class="form-control"
                     id="videoDuration"
                     placeholder="Please enter the video title"
                     name="duration"
                     value="<%= record.duration %>"
-                    required>
+                    required> <!-- required fields -->
                 </div>
                 <br>
                 <button class="btn-btn-primary" type="submit">Submit</button>
@@ -55,5 +55,5 @@ body {
 </style>
 
 
-<%- include ../partials/bottom_nav.ejs %>
+<%- include ../partials/bottom_nav.ejs %><!-- partials for every webpage -->
 <%- include ../partials/footer.ejs %>

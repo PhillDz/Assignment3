@@ -1,11 +1,11 @@
 <!--NavBar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- start of navbar -->
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">Video Record Website</a>
+    <a class="navbar-brand" href="/">Video Record Website</a> <!-- navbar name -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- dropdown menu -->
       <ul class="navbar-nav ms-auto"> 
 
         <li class="nav-item">
@@ -19,7 +19,7 @@
         </li>
 
         <li class="nav-item">
-        <% if (title == "records") { %>
+        <% if (title == "records") { %> // records portion of the top navbar, not sure why the title == "records" doesnt work
           <a class="nav-link active" href="/records">
         <% } else { %>
           <a class="nav-link" href="/records">
@@ -30,5 +30,3 @@
     </div>
   </div>
 </nav>
-<style>
-</style>

@@ -1,6 +1,6 @@
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
-<div class = "container">
+<div class = "container"> <!-- error page if one occurs, displays error message, status of error, and what it has done previous to error-->
     <h1><%= message %></h1>
     <h2><%= error.status %></h2>
     <pre><%= error.stack %></pre>

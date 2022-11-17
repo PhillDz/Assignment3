@@ -1,5 +1,5 @@
 <%- include ../partials/header.ejs %>
-<%- include ../partials/main_nav.ejs %>
+<%- include ../partials/main_nav.ejs %> <!-- include partials made in partials folder -->
 <!-- Add page -->
 
 <div class="container">
@@ -7,29 +7,29 @@
         <div class ="col-md-offset-3 col-md-6">
             <h1>Add a Video</h1>
             <br>
-            <form class="form" method="post">
+            <form class="form" method="post"> <!-- create a form to add a video name to the db -->
                 <div class="form-group">
                     <label for="videoNameField"></label>
                     <input type="text" class="form-control"
                     id="videoNameField"
                     placeholder="Please enter the video title"
-                    name="videoName" required>
+                    name="videoName" required> <!-- required field -->
                 </div>
                 <br>
-                <div class="form-group">
+                <div class="form-group"> <!-- create a form to add a date to when user watched a video -->
                     <label for="dateWatched"></label>
                     <input type="text" class="form-control"
                     id="dateWatched"
                     placeholder="Please enter what day you watched the video"
-                    name="date" required>
+                    name="date" required> <!-- required field -->
                 </div>
                 <br>
-                <div class="form-group">
+                <div class="form-group"> <!-- create a form to the duration of how long the user watched video -->
                     <label for="videoDuration"></label>
                     <input type="text" class="form-control"
                     id="videoDuration"
                     placeholder="Please enter how long you watched the video"
-                    name="duration" required>
+                    name="duration" required> <!-- required field -->
                 </div>
                 <br>
                 <button class="btn-btn-primary" type="submit">Submit</button>
@@ -39,7 +39,7 @@
     </div>
 </div>
 
-<style>
+<style> 
 h1 {
   color: #100007;
   text-align: center;
@@ -48,6 +48,6 @@ body {
   background: #80D39B;
 }
 </style>
-
+<!-- css portion of the webpage -->
 <%- include ../partials/bottom_nav.ejs %>
-<%- include ../partials/footer.ejs %>
+<%- include ../partials/footer.ejs %> <!-- partials for every webpage -->

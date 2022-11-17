@@ -37,7 +37,7 @@ app.use(express.static(path.join(__dirname, '../../node_modules')));
 app.use('/', indexRouter); // localhost:3000
 app.use('/users', usersRouter); // localhost:3000/users
 app.use('/records', recordsRouter); // localhost:3000/records
-app.use(express.static('public/Assets/images'))
+app.use(express.static('public/Assets/images')); // to be able to use images in view files 
 
 // catch 404 and forward to error 
 app.use(function(req, res, next) {

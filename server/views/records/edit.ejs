@@ -1,0 +1,59 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+<!-- Edit page -->
+
+<div class="container">
+    <div class ="row">
+        <div class ="col-md-offset-3 col-md-6">
+            <h1>Edit Particular Entry</h1>
+            <br>
+            <form class="form" method="post">
+                <div class="form-group">
+                    <label for="videoNameField">Video Title</label>
+                    <input type="text" class="form-control"
+                    id="videoNameField"
+                    placeholder="Please enter the video title"
+                    name="videoName"
+                    value="<%= record.videoName %>"
+                    required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="dateWatched">Date Watched</label>
+                    <input type="text" class="form-control"
+                    id="dateWatched"
+                    placeholder="Please enter what day you watched the video"
+                    name="date"
+                    value="<%= record.date %>"
+                    required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="videoDuration">Duration Watched</label>
+                    <input type="text" class="form-control"
+                    id="videoDuration"
+                    placeholder="Please enter the video title"
+                    name="duration"
+                    value="<%= record.duration %>"
+                    required>
+                </div>
+                <br>
+                <button class="btn-btn-primary" type="submit">Submit</button>
+                <a href="/records" class="btn btn-warning">Cancel</a>
+        </div>
+    </div>
+</div>
+
+<style>
+h1 {
+  color: #100007;
+  text-align: center;
+}
+body {
+  background: #80D39B;
+}
+</style>
+
+
+<%- include ../partials/bottom_nav.ejs %>
+<%- include ../partials/footer.ejs %>

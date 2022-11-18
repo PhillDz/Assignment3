@@ -1,5 +1,5 @@
 // connects to db
 module.exports =
 {
-    "URI": "mongodb://localhost/videoRecord" // URI of DB
+    "URI": "mongodb+srv://pdimitroulakos:XADhwiB9qGTNHk5I@cluster0.kv1bltj.mongodb.net/test"
 }
